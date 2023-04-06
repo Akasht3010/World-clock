@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Clock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-image: url('16223.jpg');
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .container{
+        color: white;
+    }
+</style>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Welcome to world Clock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> -->
+
+    <div class="container my-3">
+        <h1 class="text-center">Welcome to world clock</h1>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <main class="my-3">
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm  border-primary">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">India <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="india"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Los Angeles <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="usa"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Shanghai <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="china"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">London <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="london"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">New York <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="newyork"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">California <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="california"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Berlin <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="berlin"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Sydney <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="sydney"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Tokyo <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="tokyo"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Chicago <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="chicago"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Miami <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="miami"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Paris <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="paris"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Dubai <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="dubai"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Bangkok <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="bangkok"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="alarm" name="alarm">
+            <audio src="yamete_kudasai.mp3" id="alarm"></audio>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <script>
+        const updateTime = () => {
+            let d = new Date()
+            usa.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'America/Los_Angeles',
+            })
+            india.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Asia/Kolkata',
+            })
+            china.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Asia/Shanghai',
+            })
+            london.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Europe/London',
+            })
+            newyork.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'America/New_York',
+            })
+            california.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'America/Tijuana',
+            })
+            berlin.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Europe/Berlin',
+            })
+            sydney.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Australia/Sydney',
+            })
+            tokyo.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Asia/Tokyo',
+            })
+            chicago.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'America/Chicago',
+            })
+            miami.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'America/New_York',
+            })
+            paris.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Europe/Paris',
+            })
+            dubai.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Asia/Dubai',
+            })
+            bangkok.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Asia/Bangkok',
+            })
+            let alarmhour = alarm.value.split(":")[0]
+            let alarmmin = alarm.value.split(":")[1]
+            //   console.log(d.getHours(),alarmhour)
+            //   console.log(d.getMinutes(),alarmmin)
+            if (d.getHours() == alarmhour && d.getMinutes() == alarmmin) {
+                console.log("Alarm is ringing")
+                let aud = document.getElementById('alarm');
+                aud.play()
+            }
+        }
+        setInterval(updateTime, 1000)
+    </script>
+</body>
+
+</html>
