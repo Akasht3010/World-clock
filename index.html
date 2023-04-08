@@ -14,7 +14,8 @@
         background-position: center;
         background-attachment: fixed;
     }
-    .container{
+
+    .container {
         color: white;
     }
 </style>
@@ -91,7 +92,8 @@
                             <h1 class="card-title pricing-card-title" id="usa"></h1>
                             <ul class="list-unstyled mt-3 mb-4">
 
-                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this Zone</button>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                    Zone</button>
                         </div>
                     </div>
                 </div>
@@ -275,6 +277,81 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Amsterdam <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="amsterdam"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Ankara(Turkey) <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="ankara"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Baghdad <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="baghdad"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Hongkong <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="hongkong"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">St. Petersburg <i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="russia"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <label for="appt">Select a time:</label>
             <input type="time" id="alarm" name="alarm">
@@ -328,15 +405,30 @@
             bangkok.innerHTML = d.toLocaleString('en-US', {
                 timeZone: 'Asia/Bangkok',
             })
+            amsterdam.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Europe/Amsterdam',
+            })
+            ankara.innerHTML = d.toLocaleString('en-US', {
+                timeZone: 'Europe/Istanbul',
+            })
+            baghdad.innerHTML = d.toLocaleString('en-US', { 
+                timeZone: 'Asia/Baghdad',
+             })
+            hongkong.innerHTML = d.toLocaleString('en-US', { 
+                timeZone: 'Asia/Hong_kong',
+             })
+            russia.innerHTML = d.toLocaleString('en-US', { 
+                timeZone: 'Europe/Moscow',
+             })
             let alarmhour = alarm.value.split(":")[0]
-            let alarmmin = alarm.value.split(":")[1]
-            //   console.log(d.getHours(),alarmhour)
-            //   console.log(d.getMinutes(),alarmmin)
-            if (d.getHours() == alarmhour && d.getMinutes() == alarmmin) {
-                console.log("Alarm is ringing")
-                let aud = document.getElementById('alarm');
-                aud.play()
-            }
+        let alarmmin = alarm.value.split(":")[1]
+        //   console.log(d.getHours(),alarmhour)
+        //   console.log(d.getMinutes(),alarmmin)
+        if (d.getHours() == alarmhour && d.getMinutes() == alarmmin) {
+            console.log("Alarm is ringing")
+            let aud = document.getElementById('alarm');
+            aud.play()
+        }
         }
         setInterval(updateTime, 1000)
     </script>
