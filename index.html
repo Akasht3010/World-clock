@@ -367,6 +367,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Toronto<i class="bi bi-clock"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title" id="toronto"></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Learn More About this
+                                Zone</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <label for="appt">Select a time:</label>
             <input type="time" id="alarm" name="alarm">
@@ -437,6 +452,9 @@
              })
             argentina.innerHTML = d.toLocaleString('en-US', { 
                 timeZone: 'America/Argentina/Buenos_Aires',
+             })
+            toronto.innerHTML = d.toLocaleString('en-US', { 
+                timeZone: 'America/Toronto',
              })
             let alarmhour = alarm.value.split(":")[0]
         let alarmmin = alarm.value.split(":")[1]
